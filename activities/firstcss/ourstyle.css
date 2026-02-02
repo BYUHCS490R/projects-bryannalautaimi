@@ -1,0 +1,10 @@
+main p {
+    color: navy;
+    font-size: medium;
+}
+
+header p {
+    color: rgb(67, 67, 137);
+    background-color: rgb(204, 204, 238);
+    font-weight: bold;
+}
