@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+main p {
+    color:  rgb(0, 130, 135);
+}
+
+#list {
+    color: rgb(0, 82, 85);
+}
+
+.first {
+    color: rgb(133, 164, 165)
+}
+
+.separate {
+    color: rgb(1, 134, 138);
+    font-family: sans-serif;
+}
+.bold {
+    font-weight: bold;
+}
+
+#list2 {
+    color: rgb(0, 82, 85);
+}
