@@ -1,0 +1,53 @@
+body {
+    background-color: #dcc3ea;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #622f7a;
+    font-size: medium;
+}
+header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #250339;
+}
+
+#link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3d0e58;
+}
+
+#rellink {
+    font-weight: 600;
+    color: #330b4a;
+}
+
+#abslink {
+    font-weight: 600;
+    color: #330b4a;
+}
+
+#question {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3d0e58;
+}
+
+.linkex {
+    color:#4a2361;
+}
+
+#emphasize {
+    color: #330b4a;
+    font-weight: 600;
+}
+
+#deemphasize {
+    color: #8e70b3;
+}
+
+.desctitle {
+    color:#330b4a;
+    font-weight: 600;
+}
+
+.desc {
+    color: #8e70b3;
+}
+
