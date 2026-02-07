@@ -15,12 +15,12 @@ header h1 {
 }
 
 #rellink {
-    font-weight: 600;
+    font-weight: 700;
     color: #330b4a;
 }
 
 #abslink {
-    font-weight: 600;
+    font-weight: 700;
     color: #330b4a;
 }
 
@@ -35,7 +35,7 @@ header h1 {
 
 #emphasize {
     color: #330b4a;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #deemphasize {
@@ -44,7 +44,7 @@ header h1 {
 
 .desctitle {
     color:#330b4a;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .desc {
