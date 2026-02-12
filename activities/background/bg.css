@@ -1,0 +1,9 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(74, 74, 66);
+    background-image: url(beige.jpg);
+}
+
+#copy {
+    color:rgb(174, 174, 158);
+}
