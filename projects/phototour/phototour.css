@@ -1,0 +1,23 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(wavebg.png);
+}
+
+nav a {
+    color: rgb(72, 72, 93);
+}
+.current {
+    color: rgb(117, 131, 170);
+    text-decoration: none
+}
+
+#bullets {
+    list-style-image: url(reddot.png);
+
+}
+
+#japanflag {
+    background-image: url(flagofjapan.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
