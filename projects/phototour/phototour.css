@@ -9,7 +9,7 @@ nav a {
 }
 .current {
     color: rgb(117, 131, 170);
-    text-decoration: none
+    text-decoration: none;
 }
 
 #bullets {
