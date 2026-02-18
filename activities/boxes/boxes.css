@@ -1,0 +1,29 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: rgb(198, 198, 253);
+    padding: 20px 20px 20px 5px;
+}
+
+main {
+    background-color: rgb(240, 214, 150);
+}
+
+.mainpicture {
+    background-color: rgb(255, 245, 207);
+    width: 150px;
+    margin: 50px 80px
+}
+
+.mainpicture img {
+    width: 150px; 
+}
+
+footer {
+    background-color: rgb(151, 211, 211);
+    border-width: 10px;
+    border-color: black;
+    border-style:groove
+}
