@@ -1,0 +1,21 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.beach {
+    width: 150px;
+    border: thin solid black;
+    float: left;
+}
+
+.floatleft {
+    float: left;
+}
+
+.beach img {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
