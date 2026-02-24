@@ -1,0 +1,79 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 100;
+    line-height: 25px;
+    background-color: rgb(129, 16, 16);
+    color: rgb(129, 16, 16);
+}
+
+#wrapper {
+    width: 1250px;
+    background-color: #FFD6E7;
+    margin: auto;
+    border: thin solid rgb(255, 255, 255);
+    box-shadow: 5px 5px rgba(200,200,200,0.7);
+}
+
+.bg {
+    background-image: url(candy.jpeg); 
+    border: 2px solid rgb(129, 16, 16);
+    padding: 30px; 
+    margin: 20px 40px 20px 40px;
+    background-clip: padding-box;
+    background-origin: auto;
+    border-style: dotted;
+}
+nav {
+    text-align: center;
+    height: auto;
+    font-family: sans-serif;
+}
+
+nav a{
+    display: block-inline;
+    background-color: rgb(129, 16, 16);
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: none;
+    background-color: #FFD6E7;
+    color: rgb(129, 16, 16);
+}
+
+.break {
+    margin: 40px;
+    color: rgb(129, 16, 16);
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    text-align: center;
+    text-shadow: 3px 3px rgba(112, 91, 91, 0.317);
+}
+
+.margin {
+    padding: 5px 40px 5px 40px;
+}
+.twice {
+    border: 2px solid rgb(129, 16, 16);
+    padding: 10px;
+    float: left;
+
+}
+.twice img {
+    width: 100%;
+    
+}
+
+main p {
+    color: rgb(129, 16, 16);
+    margin-right: 40px;
+}
