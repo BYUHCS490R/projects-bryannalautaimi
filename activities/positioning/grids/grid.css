@@ -1,0 +1,35 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-areas: "header header header"
+                         "side main main"
+                         "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: side;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.card {
+    background-color: rgb(198, 198, 255);
+    color: white;
+    padding: 5px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 30% 40% 25%;
+    gap: 5px;
+}
