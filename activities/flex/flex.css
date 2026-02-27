@@ -1,0 +1,39 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(246, 213, 175);
+}
+
+nav {
+    display: flex;
+    gap: 5px;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+    background-color: rgb(108, 81, 52);
+    color: white;
+    text-decoration: none;
+    border: thin solid black;
+    border-radius: 10px;
+}
+
+#parent {
+    display: flex;
+    flex-flow: row wrap;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    gap: 5px;
+}
+
+.card {
+    background-color: rgb(160, 124, 84);
+    border: thin solid black;
+    border-radius: 5px;
+    padding: 2px;
+    width: 150px;
+}
+
+.highlight {
+    order: -1;
+}
