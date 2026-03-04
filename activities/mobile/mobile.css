@@ -1,0 +1,80 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    margin-top: 100px;
+}
+
+header {
+    background-color: rgb(255, 236, 91);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding-top: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(244, 244, 217);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(239, 177, 177);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    border: thin solid black;
+    width: 200px;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 5px;
+}
+
+.card h2 {
+    margin: 3px ;
+}
+
+.card p {
+    margin: 10px 10px 10px 3px;
+}
+
+.card a {
+    display: block;
+    width: 70%;
+    padding: 3px 5px;
+    background-color: rgb(251, 243, 136);
+    color: rgb(215, 11, 11);
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.cardfig {
+    margin: 0;
+}
+
+.cardfig img {
+    width: 100%;
+}
+
+.cardfig figcaption {
+    margin: 3px;
+}
+
