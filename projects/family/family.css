@@ -1,0 +1,176 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(182, 205, 236);
+    display: grid;
+    grid-template-columns: 3fr 3.5fr 3.5fr;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "side main main"
+                         "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    display: block;
+    background-color: rgb(128, 170, 232);
+    padding: 10px;
+    margin: 0;
+}
+
+aside {
+    grid-area: side;
+    margin-right: 10px;
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 20px;
+}
+
+.defaultnav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(92, 119, 176);
+    display: flex;
+    grid-area: nav;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    justify-content: space-evenly;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    grid-area: main;
+    margin-top: 20px;
+}
+
+.ohana img{
+    width: 100%;
+}
+
+.ohana figcaption {
+    margin-top: 10px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.article {
+    background-color: rgb(227, 238, 255);
+    padding: 2px;
+    width: 250px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px rgba(118, 117, 117, 0.7);
+}
+
+.article img {
+    width: 100%;
+}
+
+.dropdown {
+    display: none;
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    body {
+        background-color: rgb(182, 205, 236);
+        grid-template-columns: none;
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "side"
+                             "footer"
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: thin solid white;
+    }
+
+    nav a:hover {
+        background-color: white;
+    }
+
+    .parent {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .article {
+        width: 100%;
+    }
+
+    .dropdown {
+        position: relative;
+        display: block;
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 120px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #eee;
+    }
+
+    .dropdown {
+        width: 100%;
+        display: block;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+    }
+
+    .defaultnav {
+        display: none;
+    }
+
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+}
