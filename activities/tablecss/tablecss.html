@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table CSS</title>
+    <link rel="stylesheet" href="tablecss.css">
+</head>
+<body>
+    <header>
+        <h1>Table CSS</h1>
+    </header>
+    <main>
+        <h2>Class Schedule</h2>
+        <table class="schedule">
+            <tr>
+                <th>Course Number &nbsp;</th>
+                <th>Title</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th>Credits</th>
+            </tr>
+            <tr>
+                <td>CS 240</td>
+                <td>Web Design</td>
+                <td>MWF 11AM</td>
+                <td>Portable 2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>PAIS 250</td>
+                <td>Polynesian Dance</td>
+                <td>MWF 12AM</td>
+                <td>Ballroom</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>SPAN 101</td>
+                <td>Spanish</td>
+                <td>MTTF 2PM</td>
+                <td>McKay 186</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th colspan="5">Fall 2025</th>
+            </tr>
+            <tr>
+                <td>CS 101</td>
+                <td>Computer Science</td>
+                <td>MWF 8AM</td>
+                <td>Portable 1</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>MATH 110</td>
+                <td>College Algebra</td>
+                <td>MWF 12AM</td>
+                <td>SCB 303</td>
+                <td>3</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <th colspan="4" id="totalcredit">Total Credits:</th>
+                    <td headers="totalcredit">16</td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Questions</h2>
+        <h3>Why don't we use the border attribute?</h3>
+        <p>Because it is invalid HTML with the HTML:5 version.</p>
+        <h3>What is the easiest way to color every other row a different color?</h3>
+        <p>Using the tr:nth-child(odd) or tr:nth-child(even).</p>
+    </main>
+    <footer>
+        <p>&copy; Bryanna Lautaimi, 2026</p>
+    </footer>
+</body>
+</html>
