@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Bryanna's Web Design Site</h1>
+    </header>
+
+    <main>
+        <form action="formprocs.html" method="post">
+            <div>
+                <label for="fname">Name:</label>
+                <input type="text" name="fullname" id="fname" value="Anita" required>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="name@email.com">
+            </div>
+            <div>
+                <label for="password">Password: </label> 
+                <input type="password" name="pass" id="password">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="black">- - - -</option>
+                    <option value="CA">California</option>
+                    <option value="HI" selected>Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+        <h2>Questions</h2>
+        <h3>The form tag has an "action" attribute. What does it do?</h3>
+        <p>It is the path or the destination we want to go to when we press the submit button.</p>
+        <h3>The form tag has a "method" attribute. What does it do?</h3>
+        <p>It tells the browser how the data should be sent once submitted.</p>
+        <h3>What is the difference between a "POST" and a "GET"?</h3>
+        <p>GET shows the data in the URL while POST doesn't, making POST more secure.</p>
+    </main>
+    <footer>
+        <p>&copy; Bryanna Lautaimi, 2026</p>
+    </footer>
+</body>
+</html>
