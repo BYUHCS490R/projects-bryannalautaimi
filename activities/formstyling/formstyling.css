@@ -1,0 +1,47 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+input:not([type='submit']), select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(245, 223, 227);
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus {
+    background-color: white;
+}
+
+input([type='submit']) {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgb(245, 223, 227);
+}
+
+fieldset {
+    box-shadow: 5px 5px 3px rgb(245, 223, 227);
+}
+
+@media only screen and (max-width: 600px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+}

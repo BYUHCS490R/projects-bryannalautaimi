@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <link rel="stylesheet" href="formstyling.css">
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+    </header>
+    <main>
+        <form action="formprocs.html" method="post">
+            <fieldset>
+                <legend>Sign Up!</legend>
+                <div class="form-row">
+                    <label for="fname">Name:</label>
+                    <input type="text" name="fullname" id="fname" value="Bryanna" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="name@email.com">
+                </div>
+                <div class="form-row">
+                    <label for="dateinput">Birthdate: </label>
+                    <input type="date" name="birthdate" id="dateinput">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password: </label> 
+                    <input type="password" name="pass" id="password">
+                </div>
+                <div class="check-row">
+                    <div class>Gender:</div> 
+                    <label><input type="radio" name="gender" name="male"> Male</label>
+                    <label><input type="radio" name="gender" name="female"> Female</label>
+                </div>
+                <div class="check-row">
+                    <label><input type="checkbox" name="remember" name="check" value="on" checked> I agree to the terms. </label>
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="black">- - - -</option>
+                        <option value="CA">California</option>
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div>
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up!">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
