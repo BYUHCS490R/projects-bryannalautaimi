@@ -1,0 +1,67 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    margin: 15px;
+}
+
+header {
+    color: rgb(70, 109, 182);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+footer {
+    color: rgb(70, 109, 182);
+    font-size:small;
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label {
+    width: 150px;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+fieldset {
+    box-shadow: 5px 5px 3px rgb(109, 109, 109);
+}
+
+legend {
+    padding: 10px;
+    border: 1px solid rgb(162, 157, 157);
+    background-color: rgb(188, 188, 188);;
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus {
+    background-color: white;
+}
+
+input:not([type='submit']), select, textarea {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(171, 196, 244);
+}
+
+input[type='submit'] {
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(84, 117, 179);
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+    border: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .form-row, .check-row {
+        display: flex;
+        flex-direction: column;
+    }
+}
