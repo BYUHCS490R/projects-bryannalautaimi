@@ -11,6 +11,7 @@
         <h1>Web Design</h1>
     </header>
     <main>
+        <div id="message"></div>
         <form action="formprocs.html" method="get" id="myForm">
             <fieldset>
                 <legend>Account Info</legend>
@@ -62,34 +63,6 @@
     <footer>
         <p>&copy; Bryanna Lautaimi, 2026</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            //alert('Form Submitted');
-
-            const fullame = document.getElementById('fullname').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const age = document.getElementById('age').value;
-
-            if (!fullname || !email) {
-                alert("You need a name and email.");
-                return;
-            }
-            
-            if (!age || age < 18) {
-                alert("You need to be 18")
-            }
-
-            const formData = {
-                name: fullname,
-                email: email,
-                password: password,
-                age: age
-            };
-
-            console.log(formData);
-        })
-    </script>
+    <script src="formjava.js"></script>
 </body>
 </html>
