@@ -2,7 +2,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault();
     //alert('Form Submitted');
 
-    const fullame = document.getElementById('fullname').value;
+    const fullname = document.getElementById('fullname').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const age = document.getElementById('age').value;
@@ -14,10 +14,12 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     
     if (!age || age < 18) {
         alert("You need to be 18")
+        return;
     }
 
     if (!password) {
         alert ("Password Required!")
+        return;
     }
 
     const formData = {
