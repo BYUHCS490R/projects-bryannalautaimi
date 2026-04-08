@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>Bryanna's Rentals</h1>
+        <p>Bringing 'Ofa to Every Rental!</p>
+    </header>
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="booking.html" class="current">Booking</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>Book Your Rental!</h2>
+        <form id="bookform">
+            <fieldset>
+                <legend>Booking Information</legend>
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-row">
+                    <label for="age">Customer's Age:</label>
+                    <input type="number" id="age" name="age" min="18" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-row">
+                    <label for="pickup">Pickup Date: </label>
+                    <input type="date" id="pickup" name="pickup" required>
+                </div>
+                <div class="form-row">
+                    <label for="dropoff">Drop-off Date: </label>
+                    <input type="date" id="dropoff" name="dropoff" required>
+                </div>
+                <div class="form-row">
+                    <label for="type">Vehicle Type:</label>
+                    <select id="type" name="type">
+                        <option value="">--Please choose a vehicle type--</option>
+                        <option value="car">Car</option>
+                        <option value="truck">Truck</option>
+                        <option value="shuttle">Shuttle</option>
+                        <option value="bus">Bus</option>
+                    </select>
+                </div>
+                <div>
+                <div>
+                    <div class="spacer"></div>
+                    <input type="submit" value="Submit Booking">
+                </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Bryanna's Rentals</p>
+    </footer>
+    <script src="project.js"></script>
+</body>
+</html>
