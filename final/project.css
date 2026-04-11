@@ -1,52 +1,126 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+
 
 header {
     color: white;
     text-align: center;
     padding: 40px;
-    background-color: #c01f1f;
+    background-image: url(island.jpg);
+    background-size: cover;
 }
 
-header h1{
+header h1 {
     font-size: 50px;
 }
+
+
 
 nav {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
     margin-bottom: 50px;
-    border: 1px solid #c01f1f;
+    border-bottom: 2px solid #c01f1f;
+    border-top: 2px solid #c01f1f;
+    background-color: white;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #c01f1f;
     padding: 10px 20px;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: rgb(214, 213, 213);
     color: #c01f1f;
-    max-width: 100%;
 }
 
 .current {
-    color: black;
     text-decoration: underline;
 }
 
-main p { 
+
+body {
+    background-color: rgba(229, 169, 59, 0.283);
+}
+
+main {
+    padding: 10px;
+}
+
+main p {
     font-size: 17px;
 }
 
-img {
-    width: 700px;
-    height: auto;
-    border-radius: 5px;
+.reference {
+    color: red;
+    text-decoration: none;
 }
+
+footer {
+    margin: 10px;
+}
+
+#welcome-head {
+    font-size: 1.8em;
+    margin: 20px;
+}
+
+#welcome {
+    font-size: 1.1em;
+    margin: 55px;
+    font-style: italic;
+}
+
+#faqhead {
+    font-size: 1.8em;
+    margin: 0px 50px 50px 50px;
+}
+
+.faq p{
+    gap: 20px;
+    margin: 0px 100px 50px 100px;
+}
+
+.faqref {
+    font-size: 0.7em;
+    margin: 20px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin: 40px;
+}
+
+.features-box {
+    border: 1px solid rgb(161, 47, 2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.features-box h3 {
+    font-size: 1.5em;
+}
+
 
 #book-now {
     background-color: #c01f1f;
@@ -55,20 +129,39 @@ img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     border-radius: 10px;
 }
 
 #book-now:hover {
-    background-color: rgb(214, 213, 213);
+    background-color: white;
     color: #c01f1f;
-    max-width: 100%;
 }
 
-.form-row{
+
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+    padding: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.form-row {
     display: flex;
-    gap: 10px;
-    margin: 10px 0;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
 }
 
 .form-row label {
@@ -80,14 +173,15 @@ img {
     text-align: right;
 }
 
-input:not([type='submit']):focus, select:focus, textarea:focus {
-    background-color: white;
-}
 
 input:not([type='submit']), select, textarea {
     border-radius: 5px;
     padding: 5px;
     background-color: rgba(135, 132, 132, 0.36);
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus {
+    background-color: white;
 }
 
 input[type='submit'] {
@@ -97,11 +191,13 @@ input[type='submit'] {
     border-radius: 5px;
 }
 
+
+
 .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     margin-top: 55px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
 }
 
 .review {
@@ -110,36 +206,100 @@ input[type='submit'] {
     box-shadow: 5px 5px 5px gray;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgba(255, 233, 126, 0.697);
+    background-color: white;
 }
 
 .review p {
     font-size: 1em;
 }
 
-.table {
-    margin: 5px auto;
-    border: 2px solid black;
-    border-collapse: collapse;
+
+
+.vehicle {
+    border: thin solid black;
+    width: 100%;
+    max-width: none;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 5px;
+    background-color: white;
 }
 
-.table td, .table th{
-    border: 1px solid black;
-    padding: 10px 20px 10px 20px;
+.vehiclefig {
+    margin: 0;
+    text-align: right;
+}
+
+.vehiclefig img {
+    width: 100%;
+    height: auto;
+}
+
+.vehiclefig figcaption a {
+    margin: 5px;
+    font-size: 0.5em;
+    text-decoration: none;
+}
+
+.vehicletxt {
+    margin: 10px 10px 10px 5px;
+}
+
+
+
+.table {
+    margin: 40px;
+    border: 1px solid rgb(161, 160, 160);
+    border-collapse: collapse;
+    width: 90%;
+    background-color: white;
+}
+
+.table td, .table th {
+    border: 1px solid rgb(137, 134, 134);
+    padding: 5px;
     text-align: center;
 }
 
+.table caption {
+    font-size: 0.8em;
+    margin: 10px;
+    caption-side: bottom;
+}
 
+table thead {
+    background-color: #c01f1f;
+    color: white;
+}
 
+.table a:hover {
+    color: blue;
+}
 
+.contact-img {
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: block;
+}
 
+.contact-img figcaption {
+    font-size: 0.7em;
+    margin-right: 20px;
+    text-align: right;
+
+}
+
+#contact {
+    font-size: 1.2em;
+    margin: 20px 100px 40px 100px;
+}
+ 
 
 @media only screen and (max-width: 600px) {
+
     nav {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center; 
+        align-items: center;
     }
 
     nav a {
@@ -151,16 +311,23 @@ input[type='submit'] {
     }
 
     .form-row, .check-row {
-        display: flex;
         flex-direction: column;
     }
 
     .row {
-        flex-flow: column nowrap;
+        flex-direction: column;
         align-items: center;
     }
 
     .review {
         width: 95%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle {
+        max-width: 95%;
     }
 }
