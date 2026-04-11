@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -21,6 +21,21 @@ header {
     padding: 40px;
     background-image: url(island.jpg);
     background-size: cover;
+    position: relative;
+}
+
+.headbg {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 0.6rem;
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.headbg:hover {
+    opacity: 1;
 }
 
 header h1 {
@@ -48,6 +63,7 @@ nav a {
 nav a:hover {
     background-color: rgb(214, 213, 213);
     color: #c01f1f;
+
 }
 
 .current {
@@ -68,7 +84,7 @@ main p {
 }
 
 .reference {
-    color: red;
+    color: #aa1717a5;
     text-decoration: none;
 }
 
@@ -94,7 +110,10 @@ footer {
 
 .faq p{
     gap: 20px;
-    margin: 0px 100px 50px 100px;
+    margin: 800px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    max-width: 800px;
 }
 
 .faqref {
@@ -125,7 +144,7 @@ footer {
 #book-now {
     background-color: #c01f1f;
     color: white;
-    padding: 15px 32px;
+    padding: 20px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -238,6 +257,11 @@ input[type='submit'] {
     margin: 5px;
     font-size: 0.5em;
     text-decoration: none;
+    color: #88141485
+}
+
+.vehiclefig figcaption a:hover {
+    color: #c01f1f;
 }
 
 .vehicletxt {
@@ -247,7 +271,7 @@ input[type='submit'] {
 
 
 .table {
-    margin: 40px;
+    margin: 20px;
     border: 1px solid rgb(161, 160, 160);
     border-collapse: collapse;
     width: 90%;
@@ -272,7 +296,7 @@ table thead {
 }
 
 .table a:hover {
-    color: blue;
+    color: #c01f1f;
 }
 
 .contact-img {
@@ -286,12 +310,23 @@ table thead {
     font-size: 0.7em;
     margin-right: 20px;
     text-align: right;
+    margin-top: 5px;
 
 }
 
+.contact-img figcaption a {
+    text-decoration: none;
+    color: #881414b2;
+}
+
+.contact-img figcaption a:hover {
+    color: #c01f1f;
+}
+
 #contact {
-    font-size: 1.2em;
-    margin: 20px 100px 40px 100px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
 }
  
 
